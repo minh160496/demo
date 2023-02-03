@@ -1,10 +1,35 @@
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 .App {
   text-align: center;
 }
 
+.nav-background {
+  background-color: #30598c !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.img-logo {
+  width: 120px;
+}
+
+.img-acc {
+  width: 50px;
+}
+
+.btn-menu {
+  background-color: transparent !important;
+  border: none;
+  color: #fff;
 }
 
 @media (prefers-reduced-motion: no-preference) {
